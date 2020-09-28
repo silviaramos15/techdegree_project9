@@ -1,0 +1,31 @@
+/* GENERAL STYLING */
+* {
+    box-sizing: border-box;
+}
+
+/* PANELS */
+.div {
+    display: none;
+}
+.panels {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+  }
+
+  .panel_1 {
+      background-color: orange;
+      flex: 1;
+  }
+  .panel_2 {
+      background-color: white;
+      flex: 4;
+  }
+  .panel_3 {
+      background-color: silver;
+      flex: 1;
+  }
+
+.open {
+    flex: 4;
+}
