@@ -1,6 +1,6 @@
 //Toggle used to expand sections on click
 const panels = document.querySelectorAll('.panel');
-const div = document.querySelectorAll('.div');
+const sections= document.querySelectorAll('.sections');
 const h3 = document.querySelectorAll('h3');
 
 // function toggleOpen() {
