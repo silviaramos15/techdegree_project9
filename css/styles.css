@@ -36,9 +36,7 @@ h3 {
 .div {
     height: 90vh;
 }
-.sections {
-    display: none;
-}
+
 
 .panel {
     display: flex;
