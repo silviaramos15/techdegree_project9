@@ -1,6 +1,6 @@
 /* VARIABLES */
 :root {
-    --font-size-xs-factor: 16px;
+    --font-size-xs-factor: 14px;
     --font-size-s-factor: 18px; 
     --font-size-m-factor: 24px; 
 
@@ -17,23 +17,25 @@ body {
 
 /* TYPOGRAPHY */
 h3 {
+    width: 50px;
     align-self: left;
     text-transform: uppercase;
-    font-size: 16px;
-    margin: 0 0 5px 3px;
-    
-    
+    font-size: 14px;
+    margin: 0 0 2px 3px;
+     
 }
      /* -------- transitions headers*/
-.rotate {
+.rotateActive {
+    transform-origin: 0 0;
     transform: rotate(-90deg);
-    bottom: 35px;
-    align-self: left;
     margin-left: 5px;
 }
 
 
 /* PANELS */
+.div {
+    height: 90vh;
+}
 .sections {
     display: none;
 }
@@ -42,6 +44,8 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+   
+    
 }
 
 .panels {
@@ -56,14 +60,14 @@ h3 {
   }
   .panel_2 {
       background-color: white;
-      flex: 4;
+     
   }
   .panel_3 {
       background-color: silver;
       flex: 1;
   }
-
-.open {
+/* -----------TRANSITIONS */
+.active {
     flex: 4;
 }
 

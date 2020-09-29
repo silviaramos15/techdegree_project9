@@ -1,18 +1,28 @@
 //Toggle used to expand sections on click
-const panels = document.querySelectorAll('.panel');
-const sections= document.querySelectorAll('.sections');
-const h3 = document.querySelectorAll('h3');
+//---- activate/remove transitions on the h3
+//---- show/hide section
 
-// function toggleOpen() {
-//   this.classList.toggle('open');
-  
-// }
 
-// panels.forEach(panel => panel.addEventListener('click', toggleOpen));
 
-//-------------------------------------
-//Create event listener to hide/show info inside the panels on click
-// panels.addEventListener('click', () => {
-//   div.style.display = 'block';
-//   h3.classList.add('rotate');
-// });
+const activateClass = clicked => {
+  const panels = document.querySelectorAll('.panel');
+  const h3 = document.getElementsByTagName('h3');
+  const section = document.querySelectorAll('.sections');
+  panels.forEach(panel => {
+    if (panel === clicked) {
+      panel.classList.add('active');
+      h3.classList.add('rotateActive');
+      section.style.display = 'block';
+    } else {
+      panel.classList.remove('active');
+      h3.classList.remove('rotateActive');
+      section.style.display = 'none';
+
+    }
+  });
+};
+
+const panel_1 = document.querySelector('.panel_1');
+panel_1.addEventListener('click', e => {
+  activateClass(e.target);
+});
