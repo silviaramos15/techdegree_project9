@@ -3,10 +3,38 @@
     box-sizing: border-box;
 }
 
+body {
+    max-width: 100%;
+}
+
+/* TYPOGRAPHY */
+h3 {
+    align-self: center;
+    text-transform: uppercase;
+    position: fixed;
+    bottom: 0;
+    
+}
+     /* -------- transitions headers*/
+.rotate {
+    transform: rotate(-90deg);
+    bottom: 35px;
+    align-self: left;
+    margin-left: 5px;
+}
+
+
 /* PANELS */
 .div {
     display: none;
 }
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .panels {
     min-height: 100vh;
     overflow: hidden;
@@ -29,3 +57,9 @@
 .open {
     flex: 4;
 }
+
+
+/* MEDIA QUERIES */
+/* @media (min-width: 768px) {
+
+} */
