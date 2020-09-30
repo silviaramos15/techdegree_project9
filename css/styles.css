@@ -4,7 +4,15 @@
     --font-size-s-factor: 18px; 
     --font-size-m-factor: 24px; 
 
+    --color-bg-primary: #ffa500;
+    --color-bg-secondary: #fff;
+    --color-bf-third: silver;
+
+    --font-family-main: 'Baloo Tammudu 2', cursive;
+    --font-family-secondary: 'Roboto', sans-serif; 
 }
+
+
 
 /* GENERAL STYLING */
 * {
@@ -17,24 +25,22 @@ body {
 
 /* TYPOGRAPHY */
 h3 {
-    width: 50px;
+    width: 3.125em; /*50px*/
     align-self: left;
     text-transform: uppercase;
     font-size: 14px;
     margin: 0 0 2px 3px;
      
 }
-     /* -------- transitions headers*/
-.rotateActive {
-    transform-origin: 0 0;
-    transform: rotate(-90deg);
-    margin-left: 5px;
-}
 
 
 /* PANELS */
 .div {
     height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 
@@ -42,6 +48,8 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* cursor: pointer; */
+    flex: 1;
    
     
 }
@@ -53,20 +61,56 @@ h3 {
   }
 
   .panel_1 {
-      background-color: orange;
-      flex: 1;
+      background-color:  var(--color-bg-primary);
+     
   }
   .panel_2 {
-      background-color: white;
+      background-color: var(--color-bg-secondary);
      
   }
   .panel_3 {
-      background-color: silver;
-      flex: 1;
+      background-color: var(--color-bf-third);
+     
   }
-/* -----------TRANSITIONS */
+/* ----------- ACTIVE TRANSITIONS */
 .active {
     flex: 4;
+}
+.rotateActive {
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
+    margin-left: .357em /*5px*/
+}
+.show {
+    display: block;
+}
+.hidden {
+    display: none;
+}
+
+/* MAIN SECTION */
+     /* ----IMAGES */
+.icons {
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.125em /*50px*/
+}
+.graphic {
+    width: 1.250em;; /*20px*/
+}
+/* ----CONTAINER */
+.main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+/* ----FOOTER */
+.footer {
+    position: fixed;
+    bottom: 0;
 }
 
 
@@ -76,4 +120,21 @@ h3 {
     text-align: center;
     font-size: 18px;
 }
+
+.graphic {
+    width: 3em; /*42px*/
+}
+h4 {
+    font-size: 32px;
+}
+h5 {
+    font-size: 20px;
+    margin-top: .357em /*5px*/
+}
+}
+
+@media (min-width: 1024px) {
+    .icons {
+        margin-top: 5em; /*70px*/
+    }
 }
