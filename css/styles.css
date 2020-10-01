@@ -72,6 +72,9 @@ h3 {
       background-color: var(--color-bf-third);
      
   }
+  .panel div{
+      cursor: pointer;
+  }
 /* ----------- ACTIVE TRANSITIONS */
 .active {
     flex: 4;
@@ -86,10 +89,9 @@ h3 {
     display: flex;
    
 }
-/* .active .sections {
-   display: flex;
-} */
-
+.active div {
+    cursor: auto;
+}
 .sections {
     display: none;
 }
@@ -131,6 +133,7 @@ h3 {
 
 .graphic img{
     width: 2.5em !important; /*42px*/
+    margin-right: 70px;
 }
 h4 {
     font-size: 32px;
