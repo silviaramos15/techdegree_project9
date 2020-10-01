@@ -14,3 +14,23 @@ panels.forEach(panel => {
   });
 });
 
+const arrowRight = document.querySelector('.right');
+const arrowleft = document.querySelector('.left');
+const intro = document.querySelector('.intro');
+const skills = document.querySelector('.skills');
+
+arrowRight.addEventListener('click', () => {
+intro.style.display = 'none';
+skills.style.display = 'block';
+arrowRight.style.display = 'none';
+arrowleft.style.display = 'inline-block';
+})
+
+arrowleft.addEventListener('click', () => {
+intro.style.display = 'block';
+skills.style.display = 'none';
+arrowRight.style.display = 'inline-block';
+arrowleft.style.display = 'none';
+})
+
+

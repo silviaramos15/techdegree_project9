@@ -10,6 +10,7 @@
 
     --font-family-main: 'Baloo Tammudu 2', cursive;
     --font-family-secondary: 'Roboto', sans-serif; 
+    --font-family-small: 'Kalam', cursive;
 }
 
 
@@ -32,7 +33,9 @@ h3 {
     margin: 0 0 2px 3px;
      
 }
-
+code {
+    font-family: var(--font-family-small);
+}
 
 /* PANELS */
 .div {
@@ -109,6 +112,7 @@ h3 {
     
 }
 /* ----CONTAINER */
+    /* -----WHITE CONTAINER */
 .main {
     width: 100%;
     display: flex;
@@ -117,6 +121,66 @@ h3 {
     margin: 0 auto;
     
 }
+ /* -----ORANGE CONTAINER */
+.about {
+    width: 95%;
+   position: relative;
+   margin: 0 auto;
+   
+   
+}
+.right {
+    width: 16px;
+    display: inline-block;
+    position: absolute;
+    right: 5px;;
+    top: 50%;
+    cursor: pointer;
+}
+
+.left {
+    width: 16px;
+    display: none;
+    position: absolute;
+    left: 5px;;
+    top: 53%;
+    cursor: pointer; 
+}
+.about article {
+    width: 80%;
+    margin: 0 auto;
+   
+   
+}
+.intro h4 span{
+    border-bottom: 1px solid black;
+}
+.intro p span {
+font-style: italic;
+}
+
+.skills {
+    display: none;
+    width: 90%;
+}
+.skills p,
+.skills h4 {
+    margin-left: 15px;
+}
+.skills p span {
+    font-style: italic;
+}
+    /* ----- icons */
+    .skills_icons {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 25px;
+    }
+   
+    .skill img {
+        width: 30%;
+    }
+
 /* ----FOOTER */
 .footer {
     position: fixed;
@@ -141,6 +205,12 @@ h4 {
 h5 {
     font-size: 20px;
     margin-top: .357em /*5px*/
+}
+.about article {
+    width: 95%;
+}
+.about p {
+    font-size: 18px;
 }
 }
 
