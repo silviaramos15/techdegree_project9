@@ -13,6 +13,8 @@ panels.forEach(panel => {
    
   });
 });
+// --------------------
+// Arrows on orange panel
 
 const arrowRight = document.querySelector('.right');
 const arrowleft = document.querySelector('.left');
@@ -32,5 +34,4 @@ skills.style.display = 'none';
 arrowRight.style.display = 'inline-block';
 arrowleft.style.display = 'none';
 })
-
-
+// --------------------
