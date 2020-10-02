@@ -42,6 +42,9 @@ code {
     font-family: var(--font-family-small);
     font-size: 12px;
 }
+.code {
+    font-family: var(--font-family-small);
+}
 p {
     font-size: var(--font-size-xs-factor);
 }
@@ -95,9 +98,13 @@ p {
 .active {
     flex: 4;
 }
+h3 {
+   transform-origin: 0 0;
+    transform: rotate(-90deg); 
+}
 .active h3{
     transform-origin: 0 0;
-    transform: rotate(-90deg);
+    transform: rotate(0deg);
     margin-left: .357em /*5px*/
 }
 .active div,
@@ -188,6 +195,7 @@ font-size: 32px;
     left: 15px;
 }
 
+
  /* -----ORANGE CONTAINER */
 .about {
     width: 95%;
@@ -253,6 +261,7 @@ font-style: italic;
     .skill img {
         width: 16px;
         margin-left: 10px;
+        cursor: pointer;
     }
 
 /* ----FOOTER */
@@ -264,9 +273,64 @@ font-style: italic;
 }
 
 
+
+
+/* MODAL WINDOW */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(100, 100, 100, 0.4);
+}
+.modal {
+    width: 375px;
+    margin: 15% auto auto;
+    text-align: center;
+    position: relative;
+    background-color:var(--color-bg-secondary);
+    border: 3px solid var(--color-bf-third);
+    border-radius: 5px;
+    padding: 30px 20px;
+    z-index: 2;
+    
+}
+
+
+.hidden {
+    display: none;
+}
+.modal-close {
+    position: absolute;
+    right: 2px;
+    top: 5px;
+}
+button {
+    background-color: var(--color-bg-primary);
+    border: 1px solid var(--color-bg-secondary);
+    color: var(--color-bg-secondary);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+button:hover {
+    filter: brightness(1.2);
+    
+}
+
+
 /* MEDIA QUERIES */
 @media (min-width: 768px) {
-
+    .active h3 {
+        transform-origin: 0 0;
+         transform: rotate(-90deg); 
+     }
+      h3{
+         transform-origin: 0 0;
+         transform: rotate(0deg);
+        
+     }
 
 .graphic img{
     width: 22px !important;
@@ -329,6 +393,7 @@ transform: rotate(-90deg) translateY(-80px);
         height: 60px;
        
     }
+  
 }
 
 @media (min-width: 1024px) {
