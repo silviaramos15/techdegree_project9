@@ -99,7 +99,9 @@ p {
     flex: 4;
     transition: .4s ease-in-out;
    
+   
 }
+
 h3 {
    transform-origin: 0 0;
     transform: rotate(-90deg); 
@@ -285,6 +287,9 @@ font-style: italic;
     .skill img:hover {
         transform: scale(1.2);
     }
+    .skill_title {
+        color: var(--color-bg-primary);
+    }
 
 /* ----FOOTER */
 .footer {
@@ -299,7 +304,8 @@ font-style: italic;
 
 /* MODAL WINDOW */
 
-.overlay {
+.overlay,
+.overlay_form {
     position: absolute;
     top: 0;
     left: 0;
@@ -307,7 +313,8 @@ font-style: italic;
     bottom: 0;
     background-color: rgba(100, 100, 100, 0.4);
 }
-.modal {
+.modal,
+.modal_form {
     width: 375px;
     margin: 15% auto auto;
     text-align: center;
@@ -320,11 +327,12 @@ font-style: italic;
     
 }
 
-
-.hidden {
+.hidden,
+.hidden_form {
     display: none;
 }
-.modal-close {
+.modal-close,
+.form-close {
     position: absolute;
     right: 2px;
     top: 5px;
@@ -340,7 +348,46 @@ button:hover {
     filter: brightness(1.2);
     
 }
-
+/* Form styling */
+.h2Form {
+    color: var(--color-bg-primary);
+    font-family: var(--font-family-main);
+}
+.flex-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+.flex-form > input,
+textarea {
+    margin-top: 5px;
+    background-color: #f4f4f4;
+    border: 1px solid #f4f4f4;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
+::placeholder {
+    font-size: 10px;
+    text-align: right;
+    padding-right: 15px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    transition: ease-in-out .5s;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border: 1px solid var(--color-bg-primary);
+}
+form label {
+    font-size: var(--font-size-s-factor);
+}
+form button {
+    width: 25%;
+    border-radius: 5px;
+}
 
 /* MEDIA QUERIES */
 @media (min-width: 768px) {

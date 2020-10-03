@@ -10,10 +10,20 @@
     <title>Silvia Ramos</title>
   </head>
   <body>
+      <!-- Modal for skills pop out windows -->
     <div class="overlay hidden">
         <div class="modal">
             <button class="modal-close">X</button>
             <div class="modal-content"> 
+                <!-- Modal info to be added with JS -->
+            </div>
+        </div>
+    </div>
+    <!-- Modal for pop out form -->
+    <div class="overlay_form hidden_form">
+        <div class="modal_form">
+            <button class="form-close">X</button>
+            <div class="modal-content_form"> 
                 <!-- Modal info to be added with JS -->
             </div>
         </div>
@@ -68,7 +78,7 @@
                                 <img id="tech" src="images/icons/chip.svg" alt="Technologies" title="Technologies">
                             </div>
                             <div class="skill">
-                                <img src="images/icons/cv.svg" alt="Cv" title="My CV">
+                                <a href="https://drive.google.com/file/d/1S_7Rb0pNFBk-43Ww7TICkaA2X0m9NBWv/view?usp=sharing" target="_blank"><img src="images/icons/cv.svg" alt="Cv" title="My CV"></a>
                             </div>
                            
                         </div>
@@ -102,7 +112,7 @@
                             <a href="mailto:sramos.exp@gmail.com"><img src="images/icons/mail-dot-ru.svg" alt="Mail"></a>
                         </div>
                         <div class="graphic">
-                            <a href="#"><img src="images/icons/theconversation.svg" alt="Form"></a>   
+                            <a id="form" href="#"><img src="images/icons/theconversation.svg" alt="Form"></a>   
                         </div>
                     </div>
                     <footer class="footer">
