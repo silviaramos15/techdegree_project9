@@ -4,7 +4,7 @@
     --font-size-s-factor: 18px; 
     --font-size-m-factor: 24px; 
 
-    --color-bg-primary: #ffa500;
+    --color-bg-primary:  #ff8c00;
     --color-bg-secondary: #fff;
     --color-bf-third: silver;
 
@@ -170,14 +170,15 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-   height: 10%;
-   transform: rotate(-90deg) translateY(-40px);
- 
-    
+    margin-top: 10px;
+   height: 10%; 
+    transform: rotate(-90deg) translateY(-40px);
 }
 .titles h4 {
 font-size: 32px;
 }
+
+
 
 
     /* ----- DECOR */
@@ -185,7 +186,7 @@ font-size: 32px;
 .cuadro {
     width: 40px;
     height: 40px;
-    background-color: silver;
+    background-color: var(--color-bf-third);
     position: relative;
     top: 10%;
     left: 70%;
@@ -196,7 +197,7 @@ font-size: 32px;
     content: "";
     width: 30px;
     height: 30px;
-    border: 5px solid orange;
+    border: 5px solid var(--color-bg-primary);
     position: relative;
     top: -30%;
     left: 20px;
@@ -289,6 +290,7 @@ font-style: italic;
     }
     .skill_title {
         color: var(--color-bg-primary);
+        font-family: var(--font-family-main);
     }
 
 /* ----FOOTER */
@@ -382,7 +384,8 @@ textarea:focus {
     border: 1px solid var(--color-bg-primary);
 }
 form label {
-    font-size: var(--font-size-s-factor);
+    font-size: var(--font-size-xs-factor);
+    text-align: left;
 }
 form button {
     width: 25%;
@@ -415,7 +418,7 @@ h4 {
 }
 h5 {
     font-size: 20px;
-    margin-top: .357em /*5px*/
+    /* margin-top: .357em; 5px */
 }
 p {
     font-size: var(--font-size-s-factor);
@@ -425,11 +428,26 @@ code {
 }
 /* sections */
 .titles { 
-transform: rotate(-90deg) translateY(-80px);
+transform: rotate(00deg);
+}
+.titles {
+    margin-left: 45px;
+}
+.titles h4::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: var(--color-bg-primary);
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    
 }
 .titles h4 {
     font-size: 48px;
 }
+
 .about article {
     width: 95%;
 }
@@ -472,14 +490,14 @@ transform: rotate(-90deg) translateY(-80px);
     .graphic img {
         width: 20px !important;
     }
-    .titles { 
+    /* .titles { 
         transform: rotate(-90deg) translateY(-120px);
-        }
+        } */
         .titles h4 {
             font-size: 64px;
         }
         .titles h5 {
-        font-size: 32px;
+        font-size: 28px;
         }
 }
 
