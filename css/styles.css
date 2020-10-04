@@ -23,7 +23,9 @@
 body {
     max-width: 100%;
 }
-
+img {
+    max-width: 100%;
+}
 /* TYPOGRAPHY */
 h1,
 h5,
@@ -392,6 +394,63 @@ form button {
     border-radius: 5px;
 }
 
+/* SECTION 3: GREY PLANEL */
+.portfolio {
+    overflow-y: scroll;
+    width: 95%;
+    height: 80vh;
+    margin: 0 auto;
+}
+.portfolio_header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 30px !important;
+}
+    .portfolio_header button {
+        width: 32%;
+        font-size: 12px;
+    }
+    .portfolio_flex {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio_images {
+        width: 80%;
+       height: 30%;
+        margin-top: 25px;
+        position: relative;
+        border: 3px solid var(--color-bg-secondary);
+        transition: .8s ease-in-out;
+    }
+   
+        .portfolio_images img {
+            width: 100%;
+        }
+
+        .portfolio_button {
+            display: none !important;
+            position: absolute;
+            bottom: 0;
+            background: var(--color-bg-secondary);
+            width: 100%;
+            height: 20%;
+            
+            
+           
+        }
+        .portfolio_images:hover .portfolio_button{
+            display: flex !important;
+            justify-content: space-around;
+        }
+        .btn {
+            width: 30%;
+        }
+
+        
 /* MEDIA QUERIES */
 @media (min-width: 768px) {
     .active h3 {
@@ -480,6 +539,28 @@ transform: rotate(00deg);
         height: 60px;
        
     }
+    /* BLOCK 3: GREY PLANEL */
+    .portfolio_header {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+        .portfolio_header button {
+            width: 30%;
+            font-size: var(--font-size-s-factor);
+            padding: 5px 0;
+        }
+        .portfolio_flex {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;;
+            justify-content: space-around;
+        }
+        .portfolio_images {
+            width: 45%;
+        }
+    
   
 }
 
@@ -498,6 +579,9 @@ transform: rotate(00deg);
         }
         .titles h5 {
         font-size: 28px;
+        }
+        .portfolio_images {
+            width: 30%;
         }
 }
 
